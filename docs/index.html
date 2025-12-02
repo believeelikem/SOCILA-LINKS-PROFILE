@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preload" href="./fonts/inter-v20-latin-600.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="./fonts/inter-v20-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="./fonts/inter-v20-latin-700.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
   
   <title>Frontend Mentor | Social links profile</title>
 
@@ -15,16 +18,48 @@
   </style>
 </head>
 <body>
+  <div class="social-card">
+    <div class="social-card__personal-infos">
 
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
+      <div class="social-card__personal-info">
+        <h2 class="social-card__name">
+          Jessica Randall
+        </h2>
+        <p class="social-card__location">
+          London, United Kingdom
+        </p> 
+      </div>
 
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
+      <p class="social-card__role">
+        "Front-end developer and avid reader."
+      </p>
+    </div>
+
+    <div class="social-card__social-links">
+      <a href="" class="social-card__link social-card__link--github">
+        Github
+      </a>
+      <a href="" class="social-card__link social-card__link--frontend-mentor">
+        Frontend Mentor
+      </a>
+      <a href="" class="social-card__link social-card__link--linked-in">
+        LinkedIn
+      </a>
+      <a href="" class="social-card__link social-card__link--twitter">
+        Twitter
+      </a>
+      <a href="" class="social-card__link social-card__link--instagram">
+        Instagram
+      </a>
+    </div>
+
+      
+      
+      
+
+  </div>
+
+
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
