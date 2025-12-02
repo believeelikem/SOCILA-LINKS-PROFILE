@@ -22,6 +22,94 @@
   src: url('./fonts/inter-v20-latin-700.woff2') format('woff2'); 
 }
 
+html{
+  font-size: 62.5%;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
   font-family: "Inter", sans-serif;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
+
+p,a{
+  font-size: 1.4rem;
+}
+
+a::after, a::before,a:visited, a:link{
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+
+}
+
+
+h2{
+  font-size: 2rem;
+}
+
+.social-card{
+  background-color: hsl(0, 0%, 12%);
+  display: flex;
+  flex-direction: column;
+  max-width: 33rem;
+  width: 85%;
+  padding: 3rem 2.5rem;
+  border-radius: 10px;
+}
+
+.social-card__image{
+  width: 7rem;
+  border-radius: 50%;
+}
+
+.social-card__personal-infos{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.social-card__personal-info{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.social-card__social-links{
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  text-align: center;
+}
+
+.social-card__link{
+  width: 100%;
+  background-color: hsl(0, 0%, 20%);
+  padding: 1.3rem 0;
+  border-radius: 5px;
+}
+.social-card__link:hover{
+  background-color: hsl(75, 94%, 57%); 
+  color: hsl(0, 0%, 8%)
+;
+}
+
+.social-card__link--github{
+  margin-top: 2rem;
+}
+
+.social-card__location{
+  color: hsl(75, 94%, 57%);
+}
+
+
+
